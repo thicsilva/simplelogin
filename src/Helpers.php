@@ -13,6 +13,11 @@ function site(string $param = null): string
     return SITE["root"];
 }
 
+function routeImage(string $imageUrl): string
+{
+    return "https://via.placeholder.com/1200x628/0984e3/FFFFFFF?text={$imageUrl}";
+}
+
 /**
  * @param string $path
  * @return string
@@ -27,7 +32,7 @@ function flash(string $type = null, string $message = null): ?string
     if ($type && $message) {
         $_SESSION["flash"] = [
             "type" => $type,
-            "message" => $message
+            "message" => $message,
         ];
 
         return null;

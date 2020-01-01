@@ -6,9 +6,9 @@
 define("SITE", [
     "name" => "Auth em MVC com PHP",
     "description" => "Sistema ",
-    "domain" => "localauth.com",
+    "domain" => "www.localhost/sistema-login/",
     "locale" => "pt-BR",
-    "root" => "http://localhost:8000"
+    "root" => "https://www.localhost/sistema-login/",
 ]);
 
 /**
@@ -30,8 +30,8 @@ define("DATA_LAYER_CONFIG", [
         PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
-        PDO::ATTR_CASE => PDO::CASE_NATURAL
-    ]
+        PDO::ATTR_CASE => PDO::CASE_NATURAL,
+    ],
 ]);
 
 /**
@@ -41,11 +41,10 @@ define("DATA_LAYER_CONFIG", [
 define("SOCIAL", [
     "facebook_page" => "thicsilva",
     "facebook_author" => "thicsilva",
-    "facebook_appId" => "",
+    "facebook_appId" => "123",
     "twitter_creator" => "@thicsilva",
-    "twitter_site" => "@thicsilva"
+    "twitter_site" => "@thicsilva",
 ]);
-
 
 /**
  * MAIL CONNECT
@@ -53,13 +52,11 @@ define("SOCIAL", [
 
 define("MAIL", []);
 
-
 /**
  * SOCIAL LOGIN FACEBOOK
  */
 
 define("FACEBOOK_LOGIN", []);
-
 
 /**
  * SOCIAL LOGIN GOOGLE
