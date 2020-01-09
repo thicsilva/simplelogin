@@ -6,31 +6,26 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <?= $head; ?>
+    <?=$head;?>
 
-    <link rel="stylesheet" href="<?= asset("/css/style.css"); ?>"/>
-    <link rel="stylesheet" href="<?= asset("/css/form.css"); ?>"/>
-    <link rel="stylesheet" href="<?= asset("/css/button.css"); ?>"/>
-    <link rel="stylesheet" href="<?= asset("/css/message.css"); ?>"/>
-    <link rel="stylesheet" href="<?= asset("/css/load.css"); ?>"/>
-    <link rel="icon" type="image/png" href="<?= asset("/images/favicon.png"); ?>"/>
+    <link rel="stylesheet" href="<?=asset("/style.min.css");?>"/>
+    <link rel="icon" type="image/png" href="<?=asset("/images/favicon.png");?>"/>
 </head>
 <body>
 
 <div class="ajax_load">
     <div class="ajax_load_box">
         <div class="ajax_load_box_circle"></div>
-        <div class="ajax_load_box_title">Aguarde, carrengando...</div>
+        <div class="ajax_load_box_title">Aguarde, carregando...</div>
     </div>
 </div>
 
 <main class="main_content">
-    <?= $v->section("content"); ?>
+    <?=$v->section("content");?>
 </main>
 
-<script src="<?= asset("/js/jquery.js"); ?>"></script>
-<script src="<?= asset("/js/jquery-ui.js"); ?>"></script>
-<?= $v->section("scripts"); ?>
+<script src="<?=asset("/scripts.min.js");?>"></script>
+<?=$v->section("scripts");?>
 
 </body>
 </html>
